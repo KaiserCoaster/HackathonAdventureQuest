@@ -6,6 +6,8 @@ $f3->config('app/config.ini');
 
 $f3->route('GET /', 'App->home');
 
+$f3->route('GET /@id', 'App->quest');
+
 $f3->run();
 
 ?>
