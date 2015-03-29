@@ -26,7 +26,7 @@ class App {
 		$quest = new DB\SQL\Mapper($db,'questTree');
         $quest->load(array('id=?', $id));
         if($quest->dry()) {
-            return null
+            return null;
         }
         return $quest;
     }
