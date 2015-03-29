@@ -11,17 +11,55 @@ class App {
     function quest($f3, $args) {
         $id = $args['id'];
         $quest = self::getQuest($id);
-        $f3->set('pagetitle','HackQuest['.$id.']');
         if($quest != null) {
-            $f3->set('template','view/home.html');
+            $f3->set('pagetitle','HackQuest['.$quest->level.']');
+            $f3->set('template','view/quest.html');
             $f3->set('message', $quest->message);
             $f3->set('qa', self::questOptionURL($id, 'a', $quest->a));
             $f3->set('qb', self::questOptionURL($id, 'b', $quest->b));
             $f3->set('qc', self::questOptionURL($id, 'c', $quest->c));
         }
         else {
+            $f3->set('pagetitle','HackQuest');
             $f3->set('template','view/error.html');
         }
+    }
+    
+    function make($f3, $args) {
+        $parent = $args['parent'];
+        $option = $args['option'];
+        $quest = self::getQuest($parent);
+        $f3->set('pagetitle','HackQuest['.($quest->level+1).']');
+        $f3->set('template','view/make.html');
+        $action = "";
+        switch($option) {
+            case 'a':
+                $action = "You have chosen to get serious";
+                break;
+            case 'b':
+                $action = "You have chosen to give up";
+                break;
+            case 'c':
+                $action = "You have chosen the Magic Hat!";
+                break;
+        }
+        $f3->set('message', action);
+    }
+    
+    function makePost($f3, $args) {
+        $db = $this->db;
+        $parent = $args['parent'];
+        $option = $args['option'];
+        $message = $args['message'];
+        $pquest = self::getQuest($parent);
+        $quest = new DB\SQL\Mapper($db, 'questTree');
+        $quest->message = $message;
+        $quest->a = 0;
+        $quest->b = 0;
+        $quest->c = 0;
+        $quest->level = $pquest->level+1;
+        $quest->save();
+        header("Location: " . $quest->id);
     }
     
     function getQuest($id) {
