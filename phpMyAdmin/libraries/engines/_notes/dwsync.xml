@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="bdb.lib.php" server="gadv.com" local="130167567487962343" remote="130167575400000000" />
+<file name="berkeleydb.lib.php" server="gadv.com" local="130167567488282361" remote="130167575400000000" />
+<file name="binlog.lib.php" server="gadv.com" local="130167567488612380" remote="130167575400000000" />
+<file name="innobase.lib.php" server="gadv.com" local="130167567488942399" remote="130167575400000000" />
+<file name="innodb.lib.php" server="gadv.com" local="130167567489562435" remote="130167575400000000" />
+<file name="memory.lib.php" server="gadv.com" local="130167567489892453" remote="130167575400000000" />
+<file name="merge.lib.php" server="gadv.com" local="130167567490212472" remote="130167575400000000" />
+<file name="mrg_myisam.lib.php" server="gadv.com" local="130167567490552491" remote="130167575400000000" />
+<file name="myisam.lib.php" server="gadv.com" local="130167567490942514" remote="130167575400000000" />
+<file name="ndbcluster.lib.php" server="gadv.com" local="130167567491292534" remote="130167575400000000" />
+<file name="pbxt.lib.php" server="gadv.com" local="130167567491662555" remote="130167575400000000" />
+<file name="performance_schema.lib.php" server="gadv.com" local="130167567491962572" remote="130167576000000000" />
+</dwsync>

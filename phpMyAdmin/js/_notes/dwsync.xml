@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="ajax.js" server="gadv.com" local="130167567380176178" remote="130167572400000000" />
+<file name="chart.js" server="gadv.com" local="130167567380516198" remote="130167572400000000" />
+<file name="common.js" server="gadv.com" local="130167567380816215" remote="130167572400000000" />
+<file name="config.js" server="gadv.com" local="130167567381206237" remote="130167572400000000" />
+<file name="date.js" server="gadv.com" local="130167567381546256" remote="130167572400000000" />
+<file name="db_operations.js" server="gadv.com" local="130167567381806271" remote="130167572400000000" />
+<file name="db_search.js" server="gadv.com" local="130167567382096288" remote="130167572400000000" />
+<file name="db_structure.js" server="gadv.com" local="130167567382436307" remote="130167572400000000" />
+<file name="export.js" server="gadv.com" local="130167567382746325" remote="130167572400000000" />
+<file name="functions.js" server="gadv.com" local="130167567383496368" remote="130167572400000000" />
+<file name="get_image.js.php" server="gadv.com" local="130167567383896391" remote="130167572400000000" />
+<file name="get_scripts.js.php" server="gadv.com" local="130167567384186407" remote="130167572400000000" />
+<file name="gis_data_editor.js" server="gadv.com" local="130167567384516426" remote="130167573000000000" />
+<file name="import.js" server="gadv.com" local="130167567384796442" remote="130167573000000000" />
+<file name="indexes.js" server="gadv.com" local="130167567385086459" remote="130167573000000000" />
+<file name="keyhandler.js" server="gadv.com" local="130167567385366475" remote="130167574200000000" />
+<file name="makegrid.js" server="gadv.com" local="130167567385836502" remote="130167574200000000" />
+<file name="messages.php" server="gadv.com" local="130167567386466538" remote="130167574200000000" />
+<file name="navigation.js" server="gadv.com" local="130167567386856560" remote="130167574200000000" />
+<file name="OpenStreetMap.js" server="gadv.com" local="130167567379826158" remote="130167575400000000" />
+<file name="querywindow.js" server="gadv.com" local="130167567387126576" remote="130167575400000000" />
+<file name="replication.js" server="gadv.com" local="130167567387396591" remote="130167575400000000" />
+<file name="rte.js" server="gadv.com" local="130167567387776613" remote="130167575400000000" />
+<file name="server_databases.js" server="gadv.com" local="130167567388046628" remote="130167575400000000" />
+<file name="server_plugins.js" server="gadv.com" local="130167567388306643" remote="130167575400000000" />
+<file name="server_privileges.js" server="gadv.com" local="130167567388646663" remote="130167575400000000" />
+<file name="server_status.js" server="gadv.com" local="130167567388886676" remote="130167575400000000" />
+<file name="server_status_advisor.js" server="gadv.com" local="130167567389156692" remote="130167575400000000" />
+<file name="server_status_monitor.js" server="gadv.com" local="130167567389716724" remote="130167575400000000" />
+<file name="server_status_queries.js" server="gadv.com" local="130167567389976739" remote="130167575400000000" />
+<file name="server_status_sorter.js" server="gadv.com" local="130167567390246754" remote="130167575400000000" />
+<file name="server_status_variables.js" server="gadv.com" local="130167567390526770" remote="130167575400000000" />
+<file name="server_variables.js" server="gadv.com" local="130167567390836788" remote="130167575400000000" />
+<file name="sql.js" server="gadv.com" local="130167567391196808" remote="130167575400000000" />
+<file name="tbl_change.js" server="gadv.com" local="130167567391506826" remote="130167575400000000" />
+<file name="tbl_chart.js" server="gadv.com" local="130167567391836845" remote="130167575400000000" />
+<file name="tbl_gis_visualization.js" server="gadv.com" local="130167567392156863" remote="130167575400000000" />
+<file name="tbl_relation.js" server="gadv.com" local="130167567392396877" remote="130167575400000000" />
+<file name="tbl_select.js" server="gadv.com" local="130167567392696894" remote="130167575400000000" />
+<file name="tbl_structure.js" server="gadv.com" local="130167567393026913" remote="130167575400000000" />
+<file name="tbl_zoom_plot_jqplot.js" server="gadv.com" local="130167567393386934" remote="130167575400000000" />
+</dwsync>
