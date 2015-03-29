@@ -8,15 +8,6 @@
 <body>
 	<div id="header">
 		<h2>{{ @pagetitle }}</h2>
-		<!--<div id="menu">
-			<ul>
-				<F3:repeat key="{{ @key }}" value="{{ @option }}" group="{{ @menu }}">
-					<li>
-						<a href="{{ @option }}" title="{{ @key }}"{{ @pagetitle==@key?' class="active"':'' }}>{{ @key }}</a>
-					</li>
-				</F3:repeat></p>
-			</ul>
-		</div>-->
 	</div>
 	<div id="content">
 		<F3:include href="{{ @template }}.html"/>
