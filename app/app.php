@@ -6,7 +6,7 @@ class App {
     
     function home($f3) {
         $f3->set('pagetitle','Home');
-		$f3->set('template','home.html');
+		$f3->set('template','home');
         $f3->set('name', 'what');
     }
     
