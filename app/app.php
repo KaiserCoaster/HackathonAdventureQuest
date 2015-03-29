@@ -15,6 +15,9 @@ class App {
         if($quest != null) {
             $f3->set('template','view/home.html');
             $f3->set('message', $quest->message);
+            $f3->set('qa', self::questOptionURL($id, 'a', $quest->a));
+            $f3->set('qb', self::questOptionURL($id, 'b', $quest->b));
+            $f3->set('qc', self::questOptionURL($id, 'c', $quest->c));
         }
         else {
             $f3->set('template','view/error.html');
@@ -29,6 +32,13 @@ class App {
             return null;
         }
         return $quest;
+    }
+    
+    function questOptionURL($parentID, $option, $optionID) {
+        if($optionID == 0)
+            return "make/" . $parentID . "/" . $option;
+        else
+            return $optionID;
     }
     
     function beforeroute($f3) {
