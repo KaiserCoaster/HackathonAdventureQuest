@@ -4,6 +4,12 @@ class App {
     
     private $db;
     
+    function home($f3) {
+        $f3->set('pagetitle','Home');
+		$f3->set('template','home');
+        $f3->set('name', 'what');
+    }
+    
     function beforeroute($f3) {
         $f3->set('rendertemplate', true);
     }
