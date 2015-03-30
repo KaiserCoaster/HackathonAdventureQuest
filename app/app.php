@@ -43,14 +43,15 @@ class App {
                 $action = "You have chosen the Magic Hat!";
                 break;
         }
-        $f3->set('message', action);
+        $f3->set('message', $action);
     }
     
-    function makePost($f3, $args) {
+    function makePost($f3) {
+        $f3->set('rendertemplate', false);
         $db = $this->db;
-        $parent = $args['parent'];
-        $option = $args['option'];
-        $message = $args['message'];
+        $parent = $f3->get('PARAMS.parent');
+        $option = $f3->get('PARAMS.option');
+        $message = $f3->get('POST.message');
         $pquest = self::getQuest($parent);
         $quest = new DB\SQL\Mapper($db, 'questTree');
         $quest->message = $message;
@@ -59,7 +60,19 @@ class App {
         $quest->c = 0;
         $quest->level = $pquest->level+1;
         $quest->save();
-        header("Location: " . $quest->id);
+        switch($option) {
+            case 'a':
+                $pquest->a = $quest->id;
+                break;
+            case 'b':
+                $pquest->b = $quest->id;
+                break;
+            case 'c':
+                $pquest->c = $quest->id;
+                break;
+        }
+        $pquest->save();
+        header("Location: /" . $quest->id);
     }
     
     function getQuest($id) {
